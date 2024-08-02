@@ -12,6 +12,7 @@ Welcome to the Ludo Game project! This is a simple implementation of the classic
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
+- [File Structure](#file-structure)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
