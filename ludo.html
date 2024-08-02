@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game</title>
+    <link rel="stylesheet" href="ludostyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ludo">
+            <div class="playerpieces">
+                <div class="playerpiece" player-id="P1" piece="0"></div>
+                <div class="playerpiece" player-id="P1" piece="1"></div>
+                <div class="playerpiece" player-id="P1" piece="2"></div>
+                <div class="playerpiece" player-id="P1" piece="3"></div>
+
+                <div class="playerpiece" player-id="P2" piece="0"></div>
+                <div class="playerpiece" player-id="P2" piece="1"></div>
+                <div class="playerpiece" player-id="P2" piece="2"></div>
+                <div class="playerpiece" player-id="P2" piece="3"></div>
+                
+            </div>
+
+            <div class="playerbases">
+                <div class="playerbase" player-id="P1"></div>
+                <div class="playerbase" player-id="P2"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row">
+                <button id="dicebtn" class="btn btn-dice">Roll</button>
+                <div class="dicevalue"></div>
+                <button id="resetbtn" class="btn btn-reset">Reset</button>
+            </div>
+            <h2 class="activeplayer">Active Player: <span></span> </h2>
+        </div>
+    </div>
+    <script src="mainludo.js" type="module"></script>
+</body>
+</html>

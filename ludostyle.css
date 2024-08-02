@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 450px;
+    margin: 20px auto;
+}
+.container .ludo{
+    height: 450px;
+    width: 100%;
+    background-image: url('ludo-bg.jpg');
+    background-size: contain;
+    position: relative;
+    border: 5px solid;
+}
+.playerpieces{
+    height: 100%;
+    width: 100%;
+}
+.playerpiece{
+    height: 4%;
+    width: 4%;
+    border: 2px solid;
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(30%,30%);
+    transition: all .2s;
+    z-index: 1;
+
+    /* top: 25%;
+    left: 71%; */
+}
+.playerpiece.highlight {
+    cursor: pointer;
+    border: 2px dashed;
+    animation: spin 1s infinite linear;
+}
+@keyframes spin{
+    0%{
+        transform: translate(30%,30%) rotate(0deg);
+    }
+    50%{
+        transform: translate(30%,30%) rotate(180deg) scale(1.2);
+    }
+    100%{
+        transform: translate(30%,30%) rotate(360deg);
+    }
+}
+
+[player-id="P1"].playerpiece{
+    background-color: #69bff9;
+}
+
+[player-id="P2"].playerpiece{
+    background-color: #03d538;
+}
+
+.playerbase{
+    width: 40%;
+    height: 40%;
+    border: 30px solid;
+    position: absolute; 
+}
+.playerbases [player-id="P1"].playerbase{
+    bottom: 0;
+    left: 0;
+    border-color: #018cf7;
+}
+.playerbases [player-id="P2"].playerbase{
+    top: 0;
+    right: 0;
+    border-color: #08912a;
+}
+
+.playerbase.highlight{
+    animation: border-blink .7s infinite ease-in-out;
+}
+@keyframes border-blink {
+    50%{
+        border-color: rgba(255, 255, 255, 0.251);
+    }
+}
+.btn{
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.btn:disabled {
+    opacity: 0.5;
+}
+.btn-dice{
+    background-color: #08912a;
+    color: white;
+}
+.btn-reset {
+    background-color: rgb(5, 164, 237);
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.dicevalue{
+    font-size: 24px;
+    font-weight: bold;
+}
+.activeplayer{
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
