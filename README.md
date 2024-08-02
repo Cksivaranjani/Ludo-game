@@ -1,5 +1,3 @@
----
-
 # Ludo Game: User vs. Computer
 
 Welcome to the Ludo Game project! This is a simple implementation of the classic board game Ludo where you can play against the computer. The game is developed using HTML, CSS, and Vanilla JavaScript, and it is hosted on Netlify.
